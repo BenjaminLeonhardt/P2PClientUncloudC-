@@ -83,7 +83,7 @@ namespace P2PClientFormsGui {
                 string text = "beg{" + "1"+":"+nameTextBox.Text + ":" + IpAdresse + "\n"+"}end";
                 byte[] data = Encoding.ASCII.GetBytes(text);
                 while (true) {
-                    try {
+                    try { 
                         //Console.WriteLine("Gesendet");
                         socket.Send(data);
                         Thread.Sleep(1000);
